@@ -1,8 +1,8 @@
 /* Requires the Docker Pipeline plugin */
 pipeline {
     agent { 
+        label 'windows'
         docker { 
-            label 'windows'
             image 'python:3.10.7-alpine' 
         } 
     }
